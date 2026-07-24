@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>STAR Creative Agency LLC — Technology &amp; Creative Solutions for Government</title>
+<meta name="description" content="STAR Creative Agency LLC is a Hispanic, woman-owned NJ small business delivering web development, cloud infrastructure, IT managed services, digital marketing, and print production for government agencies. UEI GE1FPTUNG3A1." />
+<meta name="author" content="STAR Creative Agency LLC" />
+<meta name="theme-color" content="#112e51" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="STAR Creative Agency LLC — Solutions for Government" />
+<meta property="og:description" content="Woman-owned, Hispanic-led NJ small business. Web, cloud, IT managed services, digital marketing &amp; print production for public-sector agencies." />
+<meta property="og:site_name" content="STAR Creative Agency LLC" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23112e51'/%3E%3Cpath d='M16 5l2.9 6.6 7.1.7-5.3 4.8 1.5 7-6.2-3.6-6.2 3.6 1.5-7L5.9 12.3l7.1-.7z' fill='%23f9c642'/%3E%3C/svg%3E" />
+
+<style>
+  :root{
+    --navy:#112e51;
+    --navy-2:#0b2038;
+    --blue:#205493;
+    --blue-bright:#2673c4;
+    --gold:#f9c642;
+    --gold-deep:#d99e12;
+    --ink:#1b1b1b;
+    --slate:#4a5568;
+    --line:#e2e6ec;
+    --bg:#ffffff;
+    --bg-alt:#f4f7fb;
+    --bg-navy-soft:#eef2f8;
+    --radius:14px;
+    --shadow-sm:0 1px 2px rgba(17,46,81,.08),0 2px 6px rgba(17,46,81,.06);
+    --shadow-md:0 10px 30px rgba(17,46,81,.12);
+    --maxw:1160px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"Public Sans",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.6;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:"Merriweather",Georgia,"Times New Roman",serif;line-height:1.2;color:var(--navy);}
+  h2{font-size:clamp(1.6rem,3.2vw,2.4rem);margin:0 0 .5em;}
+  h3{font-size:1.2rem;margin:0 0 .4em;}
+  p{margin:0 0 1rem;}
+  a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:2px;}
+  img,svg{max-width:100%;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+  section{padding:72px 0;}
+  .eyebrow{
+    display:inline-block;font-family:"Public Sans";font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;font-size:.74rem;color:var(--blue);margin-bottom:14px;
+  }
+  .center{text-align:center;}
+  .lead{font-size:1.13rem;color:var(--slate);max-width:62ch;}
+  .center .lead{margin-left:auto;margin-right:auto;}
+
+  /* Skip link */
+  .skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--navy);padding:10px 16px;font-weight:700;z-index:1000;border-radius:0 0 8px 0;}
+  .skip:focus{left:0;}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--gold-deep);outline-offset:2px;border-radius:4px;}
+
+  /* Utility bar */
+  .util{background:var(--navy-2);color:#cfe0f5;font-size:.82rem;}
+  .util .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;justify-content:center;padding-top:8px;padding-bottom:8px;}
+  .util strong{color:#fff;}
+  .util .dot{color:var(--gold);}
+
+  /* Header */
+  header.site{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 22px;max-width:var(--maxw);margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);}
+  .brand .mark{width:40px;height:40px;flex:0 0 auto;}
+  .brand b{font-family:"Merriweather";font-weight:900;font-size:1.06rem;letter-spacing:.01em;display:block;line-height:1.05;}
+  .brand span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:600;}
+  .nav-links{display:flex;align-items:center;gap:26px;}
+  .nav-links a{color:var(--navy);text-decoration:none;font-weight:600;font-size:.95rem;}
+  .nav-links a:hover{color:var(--blue);}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:.95rem;
+    padding:12px 20px;border-radius:10px;text-decoration:none;border:2px solid transparent;cursor:pointer;
+    transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+  }
+  .btn-primary{background:var(--gold);color:var(--navy);box-shadow:var(--shadow-sm);}
+  .btn-primary:hover{background:#ffd45e;transform:translateY(-1px);box-shadow:var(--shadow-md);}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:var(--navy);}
+  .btn-ghost:hover{background:var(--navy);color:#fff;}
+  .btn-onnavy{background:var(--gold);color:var(--navy);}
+  .btn-onnavy:hover{background:#ffd45e;transform:translateY(-1px);}
+  .btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.6);}
+  .btn-outline-light:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+  .navbtn{display:none;background:none;border:0;padding:8px;cursor:pointer;}
+  .navbtn svg{width:26px;height:26px;stroke:var(--navy);}
+
+  /* Hero */
+  .hero{position:relative;background:linear-gradient(160deg,var(--navy) 0%,#16396b 55%,var(--blue) 100%);color:#fff;overflow:hidden;padding:0;}
+  .hero .wrap{position:relative;z-index:2;padding-top:84px;padding-bottom:84px;}
+  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;}
+  .hero h1{color:#fff;font-size:clamp(2.1rem,4.6vw,3.35rem);font-weight:900;letter-spacing:-.01em;margin:0 0 20px;}
+  .hero h1 .accent{color:var(--gold);}
+  .hero p.sub{font-size:1.18rem;color:#dbe7f7;max-width:56ch;margin-bottom:16px;}
+  .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px;}
+  .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;}
+  .chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);color:#eaf1fb;padding:7px 13px;border-radius:999px;font-size:.82rem;font-weight:600;}
+  .chip svg{width:15px;height:15px;color:var(--gold);}
+  .hero-stars{position:absolute;inset:0;z-index:1;opacity:.5;}
+  /* Hero card */
+  .cred-card{background:#fff;color:var(--ink);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.35);overflow:hidden;border:1px solid rgba(255,255,255,.5);}
+  .cred-card .top{background:var(--navy);color:#fff;padding:16px 22px;display:flex;align-items:center;gap:10px;}
+  .cred-card .top svg{width:20px;height:20px;color:var(--gold);}
+  .cred-card .top b{font-family:"Merriweather";font-size:.98rem;}
+  .cred-card dl{margin:0;padding:8px 22px 18px;}
+  .cred-card .row{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);}
+  .cred-card .row:last-child{border-bottom:0;}
+  .cred-card dt{color:var(--slate);font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;}
+  .cred-card dd{margin:0;font-weight:700;color:var(--navy);text-align:right;font-size:.95rem;}
+  .mono{font-family:"Public Sans";letter-spacing:.03em;}
+
+  /* Trust strip */
+  .trust{background:var(--bg-alt);border-bottom:1px solid var(--line);}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:34px 22px;}
+  .stat{text-align:center;}
+  .stat b{display:block;font-family:"Merriweather";font-weight:900;font-size:2rem;color:var(--navy);line-height:1;}
+  .stat span{display:block;margin-top:6px;color:var(--slate);font-size:.9rem;font-weight:600;}
+
+  /* Capabilities grid */
+  .grid{display:grid;gap:22px;}
+  .cap-grid{grid-template-columns:repeat(3,1fr);}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm);transition:transform .14s ease,box-shadow .14s ease,border-color .14s ease;}
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:#cdd8e8;}
+  .card .ic{width:46px;height:46px;border-radius:11px;background:var(--bg-navy-soft);display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+  .card .ic svg{width:24px;height:24px;color:var(--blue);}
+  .card p{margin:0;color:var(--slate);font-size:.96rem;}
+
+  /* Why / differentiators */
+  .why{background:var(--navy);color:#fff;}
+  .why h2{color:#fff;}
+  .why .eyebrow{color:var(--gold);}
+  .why .lead{color:#cdddf2;}
+  .why-grid{grid-template-columns:repeat(2,1fr);margin-top:36px;}
+  .why-item{display:flex;gap:16px;padding:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:12px;}
+  .why-item .ic{flex:0 0 auto;width:42px;height:42px;border-radius:10px;background:var(--gold);display:flex;align-items:center;justify-content:center;}
+  .why-item .ic svg{width:22px;height:22px;color:var(--navy);}
+  .why-item h3{color:#fff;font-size:1.06rem;margin-bottom:4px;}
+  .why-item p{margin:0;color:#c3d5ec;font-size:.92rem;}
+
+  /* Past performance */
+  .pp-grid{grid-template-columns:repeat(2,1fr);margin-top:34px;}
+  .pp{border-left:4px solid var(--gold);background:var(--bg-alt);border-radius:0 12px 12px 0;padding:24px 26px;}
+  .pp h3{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+  .pp .metric{font-family:"Merriweather";color:var(--gold-deep);font-weight:900;font-size:.95rem;background:#fff5d8;padding:3px 10px;border-radius:999px;white-space:nowrap;}
+  .pp p{margin:0;color:var(--slate);font-size:.95rem;}
+
+  /* Compliance */
+  .comp{background:var(--bg-alt);}
+  .pill-wrap{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+  .pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:700;color:var(--navy);font-size:.92rem;display:inline-flex;align-items:center;gap:8px;box-shadow:var(--shadow-sm);}
+  .pill svg{width:16px;height:16px;color:var(--blue);}
+
+  /* Procurement snapshot */
+  .snap-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start;margin-top:34px;}
+  .panel{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);background:#fff;}
+  .panel .head{background:var(--navy);color:#fff;padding:14px 20px;font-family:"Merriweather";font-weight:700;font-size:1rem;display:flex;align-items:center;gap:9px;}
+  .panel .head svg{width:18px;height:18px;color:var(--gold);}
+  table{width:100%;border-collapse:collapse;}
+  th,td{text-align:left;padding:12px 20px;font-size:.93rem;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:last-child th,tr:last-child td{border-bottom:0;}
+  th{color:var(--slate);font-weight:600;width:44%;}
+  td{color:var(--navy);font-weight:700;}
+  .naics-list{list-style:none;margin:0;padding:6px 0;}
+  .naics-list li{display:flex;gap:14px;padding:11px 20px;border-bottom:1px solid var(--line);align-items:baseline;}
+  .naics-list li:last-child{border-bottom:0;}
+  .naics-list .code{font-weight:800;color:var(--blue);font-size:.95rem;min-width:62px;}
+  .naics-list .desc{color:var(--slate);font-size:.92rem;}
+
+  /* Contact CTA */
+  .contact{background:linear-gradient(160deg,var(--navy) 0%,#183d70 100%);color:#fff;}
+  .contact h2{color:#fff;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
+  .contact .lead{color:#d3e2f5;}
+  .contact-list{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:14px;}
+  .contact-list li{display:flex;align-items:center;gap:14px;font-size:1.02rem;}
+  .contact-list .ic{width:42px;height:42px;flex:0 0 auto;border-radius:10px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;}
+  .contact-list .ic svg{width:20px;height:20px;color:var(--gold);}
+  .contact-list a{color:#fff;text-decoration:none;font-weight:700;}
+  .contact-list a:hover{text-decoration:underline;}
+  .contact-list small{display:block;color:#a9c2e2;font-weight:500;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;}
+  .contact-card{background:#fff;border-radius:18px;padding:32px;color:var(--ink);box-shadow:0 24px 60px rgba(0,0,0,.35);text-align:center;}
+  .contact-card .mark{width:56px;height:56px;margin:0 auto 14px;}
+  .contact-card h3{color:var(--navy);}
+  .contact-card p{color:var(--slate);font-size:.95rem;}
+  .contact-card .btn{width:100%;justify-content:center;margin-top:6px;}
+
+  /* Footer */
+  footer.site{background:var(--navy-2);color:#b7c8de;font-size:.9rem;}
+  footer.site .wrap{padding:48px 22px 30px;}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.12);}
+  footer .brand b{color:#fff;}
+  footer .brand span{color:#8ea6c4;}
+  footer h4{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin:0 0 14px;}
+  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;}
+  footer a{color:#c3d3e6;text-decoration:none;}
+  footer a:hover{color:#fff;text-decoration:underline;}
+  .foot-bottom{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;padding-top:22px;color:#8ea6c4;font-size:.82rem;}
+  .foot-bottom .uei{font-family:"Public Sans";letter-spacing:.04em;color:#c3d3e6;}
+
+  /* Responsive */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:36px;}
+    .cap-grid{grid-template-columns:repeat(2,1fr);}
+    .snap-grid{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;gap:30px;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:760px){
+    section{padding:52px 0;}
+    .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 0;box-shadow:var(--shadow-md);}
+    .nav-links.open{display:flex;}
+    .nav-links a{padding:13px 22px;border-bottom:1px solid var(--line);}
+    .nav-links .btn{margin:10px 22px;justify-content:center;}
+    .navbtn{display:block;}
+    .trust .wrap{grid-template-columns:repeat(2,1fr);gap:26px 16px;}
+    .why-grid,.pp-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .util .wrap{font-size:.76rem;}
+  }
+  @media (max-width:480px){
+    .cap-grid{grid-template-columns:1fr;}
+    body{font-size:16px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto!important;transition:none!important;}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- Utility bar -->
+<div class="util">
+  <div class="wrap">
+    <span><strong>UEI</strong> GE1FPTUNG3A1</span>
+    <span class="dot">★</span>
+    <span>Registered on SAM.gov</span>
+    <span class="dot">★</span>
+    <span><strong>Woman-Owned</strong> Small Business (Hispanic-led)</span>
+    <span class="dot">★</span>
+    <span>Bayonne, New Jersey</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#112e51"/><path d="M20 6l3.7 8.4 9.1.9-6.8 6.1 1.9 8.9L20 25.6 12.1 30.2l1.9-8.9-6.8-6.1 9.1-.9z" fill="#f9c642"/></svg>
+      <span class="brand-txt"><b>STAR Creative Agency</b><span>Technology &amp; Creative Solutions</span></span>
+    </a>
+    <div class="nav-links" id="navlinks">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#why">Why STAR</a>
+      <a href="#performance">Past Performance</a>
+      <a href="#procurement">Procurement Data</a>
+      <a class="btn btn-primary" href="#contact">Contact Us</a>
+    </div>
+    <button class="navbtn" id="navbtn" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<span id="top"></span>
+<main id="main">
+
+<!-- Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <svg class="hero-stars" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="#ffffff">
+      <circle cx="120" cy="90" r="1.5" opacity=".5"/><circle cx="300" cy="150" r="1" opacity=".4"/>
+      <circle cx="520" cy="70" r="1.6" opacity=".5"/><circle cx="760" cy="120" r="1" opacity=".35"/>
+      <circle cx="980" cy="80" r="1.4" opacity=".5"/><circle cx="1120" cy="180" r="1" opacity=".4"/>
+      <circle cx="220" cy="320" r="1.2" opacity=".35"/><circle cx="640" cy="360" r="1" opacity=".3"/>
+      <circle cx="1050" cy="330" r="1.5" opacity=".4"/><circle cx="900" cy="470" r="1" opacity=".3"/>
+      <circle cx="420" cy="480" r="1.3" opacity=".35"/><circle cx="150" cy="500" r="1" opacity=".3"/>
+    </g>
+    <path d="M1000 380l6 13.6 14.9 1.4-11.1 10 3.1 14.6L1000 412l-12.9 7.6 3.1-14.6-11.1-10 14.9-1.4z" fill="#f9c642" opacity=".18"/>
+    <path d="M180 200l4 9 9.8.9-7.3 6.6 2 9.6L180 231l-8.5 5 2-9.6-7.3-6.6 9.8-.9z" fill="#f9c642" opacity=".14"/>
+  </svg>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Capability Overview · Public Sector</span>
+        <h1 id="hero-title">A single, senior-led partner for <span class="accent">government technology &amp; creative</span> needs.</h1>
+        <p class="sub">STAR Creative Agency LLC delivers secure web platforms, cloud infrastructure, IT managed services, digital outreach, and commercial print — end to end, under one roof. A Hispanic, woman-owned New Jersey small business built on 15+ years of principal-level experience.</p>
+        <div class="cta-row">
+          <a class="btn btn-onnavy" href="assets/STAR-Creative-Agency-Capability-Statement.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Capability Statement
+          </a>
+          <a class="btn btn-outline-light" href="#contact">Start a Conversation</a>
+        </div>
+        <div class="badge-row">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.7-5.3 4.8 1.5 7L12 17.8 5.8 21.1l1.5-7L2 9.3l7.1-.7z"/></svg>SBE / WBE / MBE / MWBE Eligible</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.7-5.3 4.8 1.5 7L12 17.8 5.8 21.1l1.5-7L2 9.3l7.1-.7z"/></svg>NAICS 541511 · 541512 · 518210</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.7-5.3 4.8 1.5 7L12 17.8 5.8 21.1l1.5-7L2 9.3l7.1-.7z"/></svg>WCAG / ADA Compliant Delivery</span>
+        </div>
+      </div>
+      <aside class="cred-card" aria-label="Quick reference credentials">
+        <div class="top">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l9 4v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5z"/></svg>
+          <b>Procurement Quick Reference</b>
+        </div>
+        <dl>
+          <div class="row"><dt>Unique Entity ID</dt><dd class="mono">GE1FPTUNG3A1</dd></div>
+          <div class="row"><dt>Business Type</dt><dd>Woman-Owned Small Business</dd></div>
+          <div class="row"><dt>NJ BRC No.</dt><dd class="mono">3236423 · Active</dd></div>
+          <div class="row"><dt>Primary NAICS</dt><dd class="mono">541511</dd></div>
+          <div class="row"><dt>Location</dt><dd>Bayonne, NJ 07002</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<div class="trust" aria-label="Key facts">
+  <div class="wrap">
+    <div class="stat"><b>15+</b><span>Years principal experience</span></div>
+    <div class="stat"><b>200+</b><span>Organizations served</span></div>
+    <div class="stat"><b>100K+</b><span>Users supported, zero downtime</span></div>
+    <div class="stat"><b>2</b><span>Languages — EN / ES</span></div>
+  </div>
+</div>
+
+<!-- Capabilities -->
+<section id="capabilities" aria-labelledby="cap-title">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Core Competencies</span>
+      <h2 id="cap-title">Full-stack capability, one accountable team</h2>
+      <p class="lead">From cloud architecture to brand design to commercial print, agencies get integrated delivery without stitching together multiple vendors.</p>
+    </div>
+    <div class="grid cap-grid" style="margin-top:42px">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Web Design &amp; Development</h3>
+        <p>Accessible, secure public-facing sites and portals on WordPress, Shopify, Magento, and custom stacks — built for performance and WCAG/ADA compliance.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+        <h3>Cloud Infrastructure &amp; IT Managed Services</h3>
+        <p>AWS and Azure architecture, Linux/Windows administration, monitoring, and business-continuity planning with proven zero-downtime operations.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V10M18 20V4M6 20v-4"/></svg></div>
+        <h3>Digital Advertising &amp; Campaigns</h3>
+        <p>Google and Meta campaign management, SEO/SEM, and conversion optimization to drive public awareness, enrollment, and program participation.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="14" r="2.5"/><circle cx="8.5" cy="12" r="2.5"/><path d="M3 21c1.5-4 4-6 6-6"/></svg></div>
+        <h3>Brand, Graphic Design &amp; Print</h3>
+        <p>Identity systems, public-information materials, and commercial print production through an established New Jersey printer network.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Cybersecurity &amp; Business Continuity</h3>
+        <p>Security-aware delivery, IT consulting, and continuity planning informed by PCI-DSS, HIPAA, GDPR, and CCPA experience.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14M5 8a2 2 0 1 1 0-4h14a2 2 0 1 1 0 4M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8M10 12h4"/></svg></div>
+        <h3>CRM, Automation &amp; Bilingual Outreach</h3>
+        <p>CRM integration, marketing automation, and fully bilingual (English/Spanish) content and community outreach for diverse constituencies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why STAR -->
+<section id="why" class="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Differentiators</span>
+      <h2 id="why-title">Why agencies choose STAR</h2>
+      <p class="lead">A diverse, local, senior-led supplier that helps meet set-aside goals while delivering enterprise-grade results.</p>
+    </div>
+    <div class="grid why-grid">
+      <div class="why-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <div><h3>Diverse supplier for set-aside goals</h3><p>Hispanic, woman-owned NJ small business — SBE / WBE / MBE / MWBE certification eligible to support supplier-diversity and disparity objectives.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><h3>Local &amp; community-rooted</h3><p>Headquartered in Hudson County with firsthand knowledge of local demographics, municipal needs, and the communities agencies serve.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l-3 3 3 3M19 8l3 3-3 3M9 3l-2 18"/></svg></div>
+        <div><h3>End-to-end technical + creative</h3><p>One accountable team from AWS architecture to brand design to commercial print — no vendor sprawl, no junior handoffs.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h3>Proven at scale, zero downtime</h3><p>Platforms operated with 100K+ users and 100K+ product catalogs — reliability agencies can count on for mission-critical services.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 5-3.5 7.5-8.5 9C7.5 19.5 3 17 3 12V6l9-4 9 4z"/></svg></div>
+        <div><h3>Compliance-aware delivery</h3><p>Experienced with PCI-DSS, HIPAA, GDPR, CCPA, and WCAG/ADA accessibility from day one of every engagement.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.7-5.3 4.8 1.5 7L12 17.8 5.8 21.1l1.5-7L2 9.3l7.1-.7z"/></svg></div>
+        <div><h3>Principal-level attention</h3><p>Senior expertise on every engagement with direct access to decision-makers — none of the overhead of a large agency.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Past performance -->
+<section id="performance" aria-labelledby="pp-title">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Past Performance</span>
+      <h2 id="pp-title">Representative engagements by STAR's principals</h2>
+      <p class="lead">Outcome-driven work across high-traffic commerce, education, and enterprise IT — the same rigor applied to public-sector needs.</p>
+    </div>
+    <div class="grid pp-grid">
+      <div class="pp">
+        <h3>260 Sample Sale <span class="metric">↑ 125% profitability</span></h3>
+        <p>Sole technical owner of a high-traffic Shopify platform. Optimized checkout, SEO, and integrations for 300+ vendors — supporting 100K+ monthly users at 95%+ satisfaction.</p>
+      </div>
+      <div class="pp">
+        <h3>Christine Valmy Int'l School <span class="metric">↑ 3× leads</span></h3>
+        <p>Designed and deployed WordPress, Shopify &amp; Magento platforms with integrated CRM, payment processing, and AWS/Azure infrastructure, tripling qualified lead generation.</p>
+      </div>
+      <div class="pp">
+        <h3>AMCO Auto Parts <span class="metric">100K+ SKUs</span></h3>
+        <p>Built a 100K+ SKU eCommerce store with real-time Amazon &amp; eBay sync, managed Linux servers and MySQL optimization, and expanded B2B revenue channels.</p>
+      </div>
+      <div class="pp">
+        <h3>200+ SMB &amp; Enterprise <span class="metric">Multi-sector</span></h3>
+        <p>Full-service web, digital marketing, SEO, print, and IT consulting across retail, healthcare, education, financial services, and nonprofits in the NJ/NYC metro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Compliance -->
+<section class="comp" aria-labelledby="comp-title">
+  <div class="wrap center">
+    <span class="eyebrow">Standards &amp; Compliance</span>
+    <h2 id="comp-title">Built to the standards agencies require</h2>
+    <p class="lead">Accessibility, privacy, and security frameworks are considered from the first line of code and the first design decision.</p>
+    <div class="pill-wrap" style="justify-content:center">
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>WCAG 2.x / ADA Accessibility</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>Section 508 Aware</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>PCI-DSS</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>HIPAA</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>GDPR</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>CCPA</span>
+    </div>
+  </div>
+</section>
+
+<!-- Procurement snapshot -->
+<section id="procurement" aria-labelledby="snap-title">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Procurement Data</span>
+      <h2 id="snap-title">Everything a contracting office needs</h2>
+      <p class="lead">Company identifiers, codes, and certifications in one place — ready for solicitations, set-aside verification, and vendor onboarding.</p>
+    </div>
+    <div class="snap-grid">
+      <div class="panel">
+        <div class="head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v16"/></svg>Company Data</div>
+        <table>
+          <tbody>
+            <tr><th scope="row">Legal Name</th><td>STAR Creative Agency LLC</td></tr>
+            <tr><th scope="row">Trade Name</th><td>Star Creative Group</td></tr>
+            <tr><th scope="row">Unique Entity ID (SAM.gov)</th><td class="mono">GE1FPTUNG3A1</td></tr>
+            <tr><th scope="row">EIN</th><td class="mono">42-1850434</td></tr>
+            <tr><th scope="row">NJ Entity ID</th><td class="mono">0451445203</td></tr>
+            <tr><th scope="row">NJ BRC</th><td>Active — No. 3236423</td></tr>
+            <tr><th scope="row">Business Structure</th><td>NJ Domestic LLC — 51% woman-owned (Hispanic)</td></tr>
+            <tr><th scope="row">Principal Office</th><td>658 Avenue C, Apt 1, Bayonne, NJ 07002</td></tr>
+            <tr><th scope="row">Website</th><td>starlyns.com</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:grid;gap:26px">
+        <div class="panel">
+          <div class="head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>NAICS Codes</div>
+          <ul class="naics-list">
+            <li><span class="code">541511</span><span class="desc">Custom Computer Programming Services</span></li>
+            <li><span class="code">541512</span><span class="desc">Computer Systems Design Services</span></li>
+            <li><span class="code">518210</span><span class="desc">Data Processing, Hosting &amp; Related Services</span></li>
+            <li><span class="code">541810</span><span class="desc">Advertising Agencies</span></li>
+            <li><span class="code">541613</span><span class="desc">Marketing Consulting Services</span></li>
+            <li><span class="code">541430</span><span class="desc">Graphic Design Services</span></li>
+            <li><span class="code">541890</span><span class="desc">Other Services Related to Advertising</span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <div class="head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.7-5.3 4.8 1.5 7L12 17.8 5.8 21.1l1.5-7L2 9.3l7.1-.7z"/></svg>Certifications &amp; Registrations</div>
+          <table>
+            <tbody>
+              <tr><th scope="row">SAM.gov</th><td>UEI assigned · registration in process</td></tr>
+              <tr><th scope="row">NJ SBE / WBE / MBE / MWBE</th><td>Application in process (51% Hispanic woman-owned)</td></tr>
+              <tr><th scope="row">NJ LLC Registration</th><td>Active — filed April 10, 2026</td></tr>
+              <tr><th scope="row">NJ BRC</th><td>Active — Certificate No. 3236423</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Get in Touch</span>
+        <h2 id="contact-title">Let's discuss your agency's project</h2>
+        <p class="lead">Reach out for a capability briefing, a quote, or to add STAR to your vendor list. Senior staff respond directly — in English or Spanish.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span><small>Phone</small><a href="tel:+12018445454">201-844-5454</a></span>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+            <span><small>Email</small><a href="mailto:admin@starlyns.com">admin@starlyns.com</a></span>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><small>Address</small><a href="https://maps.google.com/?q=658+Avenue+C,+Bayonne,+NJ+07002" target="_blank" rel="noopener">658 Avenue C, Apt 1, Bayonne, NJ 07002</a></span>
+          </li>
+        </ul>
+        <p style="margin-top:22px;color:#a9c2e2;font-size:.9rem"><strong style="color:#fff">Primary Contact:</strong> Starlyn E. Tejada, Manager &amp; Senior Technical Lead</p>
+      </div>
+      <div class="contact-card">
+        <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#112e51"/><path d="M20 6l3.7 8.4 9.1.9-6.8 6.1 1.9 8.9L20 25.6 12.1 30.2l1.9-8.9-6.8-6.1 9.1-.9z" fill="#f9c642"/></svg>
+        <h3>Capability Statement</h3>
+        <p>Download the full one-page overview with competencies, past performance, codes, and certifications — formatted for your procurement file.</p>
+        <a class="btn btn-primary" href="assets/STAR-Creative-Agency-Capability-Statement.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download PDF
+        </a>
+        <a class="btn btn-ghost" href="mailto:admin@starlyns.com?subject=Capability%20Briefing%20Request" style="width:100%;justify-content:center;margin-top:12px">Request a Briefing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:14px">
+          <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#f9c642"/><path d="M20 6l3.7 8.4 9.1.9-6.8 6.1 1.9 8.9L20 25.6 12.1 30.2l1.9-8.9-6.8-6.1 9.1-.9z" fill="#112e51"/></svg>
+          <span class="brand-txt"><b>STAR Creative Agency LLC</b><span>Technology &amp; Creative Solutions</span></span>
+        </a>
+        <p style="max-width:38ch;color:#9fb4cf">A Hispanic, woman-owned New Jersey small business delivering integrated technology, marketing, and creative services to public-sector and commercial clients.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#why">Why STAR</a></li>
+          <li><a href="#performance">Past Performance</a></li>
+          <li><a href="#procurement">Procurement Data</a></li>
+          <li><a href="assets/STAR-Creative-Agency-Capability-Statement.pdf" target="_blank" rel="noopener">Capability Statement (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12018445454">201-844-5454</a></li>
+          <li><a href="mailto:admin@starlyns.com">admin@starlyns.com</a></li>
+          <li><a href="https://starlyns.com" target="_blank" rel="noopener">starlyns.com</a></li>
+          <li>658 Avenue C, Apt 1<br>Bayonne, NJ 07002</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 STAR Creative Agency LLC. All rights reserved.</span>
+      <span class="uei">UEI: GE1FPTUNG3A1 · EIN: 42-1850434 · NJ Entity: 0451445203</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('navbtn');
+    var links = document.getElementById('navlinks');
+    btn.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && links.classList.contains('open')){
+        links.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
